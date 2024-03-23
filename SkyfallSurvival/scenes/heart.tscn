@@ -1,0 +1,81 @@
+[gd_scene load_steps=12 format=3 uid="uid://bvugelc1bb3sx"]
+
+[ext_resource type="Texture2D" uid="uid://cxunyyynmu17g" path="res://res/other/heart.png" id="1_qka4o"]
+[ext_resource type="Texture2D" uid="uid://3bjx7ml2vhap" path="res://res/other/black_heart.png" id="2_1ofax"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lnteu"]
+atlas = ExtResource("1_qka4o")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdus1"]
+atlas = ExtResource("1_qka4o")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wtc7v"]
+atlas = ExtResource("1_qka4o")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g0mk4"]
+atlas = ExtResource("1_qka4o")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vail2"]
+atlas = ExtResource("2_1ofax")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uf4hi"]
+atlas = ExtResource("2_1ofax")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hwrlu"]
+atlas = ExtResource("2_1ofax")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2mhbm"]
+atlas = ExtResource("2_1ofax")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xoc6e"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lnteu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdus1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wtc7v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g0mk4")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vail2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uf4hi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hwrlu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2mhbm")
+}],
+"loop": true,
+"name": &"hit",
+"speed": 5.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+texture_filter = 1
+position = Vector2(12, 13.5)
+scale = Vector2(1.75, 1.84375)
+sprite_frames = SubResource("SpriteFrames_xoc6e")
+autoplay = "default"
+frame_progress = 0.724061
